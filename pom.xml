@@ -36,12 +36,30 @@
     <system>GitHub Issues</system>
   </issueManagement>
 
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://ci.endovl.org.au/jenkins/</url>
+  </ciManagement>
+
   <scm>
      <url>https://github.com/guidograzioli/maven-play2-templates-plugin</url>
      <connection>scm:git:https://github.com/guidograzioli/maven-play2-templates-plugin.git</connection>
      <developerConnection>scm:git:https://github.com/guidograzioli/maven-play2-templates-plugin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>Releases</name>
+      <url>http://ci.endovl.org.au/nexus/content/repositories/thirdparty/</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Snapshots</name>
+      <url>http://ci.endovl.org.au/nexus/content/repositories/thirdpartysnapshots/</url>
+    </snapshotRepository>
+ </distributionManagement>
 
   <dependencies>
     <dependency>
