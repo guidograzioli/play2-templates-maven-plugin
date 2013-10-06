@@ -1,5 +1,3 @@
-package com.undebugged.maven;
-
 /*
  * Copyright 2013 Guido Grazioli <guido.grazioli@gmail.com>
  *
@@ -15,6 +13,7 @@ package com.undebugged.maven;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.undebugged.maven;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -58,7 +57,7 @@ public class TemplateCompilerMojo extends AbstractMojo {
             compileTemplates(absolutePath(generatedSourcesDirectory), project, absolutePath(sourceDirectory));
         } catch (TemplateCompilationError e) {
             String msg = String.format("Error in template %s:%s %s", e.source().getPath(), e.line(), e.message());
-            throw new MojoExecutionException(msg);
+            throw new MojoExecutionException(msg,e);
         }
     }
 
@@ -68,7 +67,9 @@ public class TemplateCompilerMojo extends AbstractMojo {
 
         if (!outputDir.exists()) {
             boolean created = outputDir.mkdirs();
-            if (!created) throw new MojoExecutionException("Failed to create output directory");
+            if (!created) {
+                throw new MojoExecutionException("Failed to create output directory");
+            }
         }
 
         List<File> classpathFiles = new ArrayList<File>();
