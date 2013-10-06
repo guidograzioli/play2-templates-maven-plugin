@@ -7,7 +7,7 @@
   <version>0.1.0-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
-  <name>play2-templates-maven-plugin Maven Plugin</name>
+  <name>Play! templates compiler plugin</name>
   <url>http://undebugged.com</url>
 
   <properties>
