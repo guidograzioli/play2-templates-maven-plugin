@@ -64,6 +64,12 @@
 
   <dependencies>
     <dependency>
+      <groupId>play</groupId>
+      <artifactId>templates_2.10</artifactId>
+      <version>${play.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.typesafe.play</groupId>
       <artifactId>templates-compiler_2.10</artifactId>
       <version>${play.version}</version>

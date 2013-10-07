@@ -76,7 +76,7 @@ class TemplateCompiler(classpath: Seq[File], forJava: Boolean) {
       template =>
         val compile = compiler.getDeclaredMethod("compile", classOf[java.io.File], classOf[java.io.File], classOf[java.io.File], classOf[String], classOf[String])
         try {
-          compile.invoke(null, template, sourceDirectory, generatedDir, "play.api.templates.Html", "import play.api.templates._\nimport play.api.templates.PlayMagic._" + "\nimport " + templatesImport.mkString("\nimport "))
+          compile.invoke(null, template, sourceDirectory, generatedDir, "play.api.templates.HtmlFormat", "import play.api.templates._\nimport play.api.templates.PlayMagic._" + "\nimport " + templatesImport.mkString("\nimport "))
         } catch {
           case e: java.lang.reflect.InvocationTargetException => {
             throw e.getTargetException
