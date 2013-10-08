@@ -33,7 +33,7 @@
   </licenses>
 
   <issueManagement>
-    <url>https://github.com/guidograzioli/maven-play2-templates-plugin/issues</url>
+    <url>https://github.com/guidograzioli/play2-templates-maven-plugin/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -43,9 +43,9 @@
   </ciManagement>
 
   <scm>
-     <url>https://github.com/guidograzioli/maven-play2-templates-plugin</url>
-     <connection>scm:git:https://github.com/guidograzioli/maven-play2-templates-plugin.git</connection>
-     <developerConnection>scm:git:https://github.com/guidograzioli/maven-play2-templates-plugin.git</developerConnection>
+     <url>https://github.com/guidograzioli/play2-templates-maven-plugin</url>
+     <connection>scm:git:https://github.com/guidograzioli/play2-templates-maven-plugin.git</connection>
+     <developerConnection>scm:git:https://github.com/guidograzioli/play2-templates-maven-plugin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
