@@ -4,7 +4,7 @@
 
   <groupId>com.undebugged.maven</groupId>
   <artifactId>play2-templates-maven-plugin</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <packaging>maven-plugin</packaging>
 
   <name>Play! templates compiler plugin</name>
